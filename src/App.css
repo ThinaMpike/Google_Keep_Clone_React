@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.material-symbols-outlined {
+  padding:10px;
+}
+
+.hover:hover {
+  background: rgba(238, 233, 233, 0.815);
+  color: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip-text {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  font-size: 0.8rem;
+  background:rgb(78, 78, 78) ;
+  color:white;
+  padding: 5px;
+  white-space: nowrap;
+  border-radius: 5px;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+
+/* testing */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ---------- THEME VARIABLES ---------- */
+:root,
+body[data-theme="light"] {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-hover: #f1f3f4;
+  --text: #202124;
+  --text-muted: #5f6368;
+  --border: #dadce0;
+  --icon: #5f6368;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  --tooltip-bg: #3c4043;
+  --tooltip-text: #ffffff;
+}
+
+body[data-theme="dark"] {
+  --bg: #202124;
+  --surface: #2d2e30;
+  --surface-hover: #3c4043;
+  --text: #e8eaed;
+  --text-muted: #9aa0a6;
+  --border: #5f6368;
+  --icon: #9aa0a6;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  --tooltip-bg: #e8eaed;
+  --tooltip-text: #202124;
+}
+
+/* ---------- GLOBAL ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.material-symbols-outlined {
+  padding: 10px;
+  color: var(--icon);
+}
+
+/* ---------- HOVER (was hardcoded white) ---------- */
+.hover:hover {
+  background: var(--surface-hover);
+  color: var(--text);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ---------- TOOLTIP ---------- */
+.tooltip {
+  position: relative;
+}
+
+.tooltip-text {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  font-size: 0.8rem;
+  background: var(--tooltip-bg);
+  color: var(--tooltip-text);
+  padding: 5px;
+  white-space: nowrap;
+  border-radius: 5px;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+/* ---------- THEME TOGGLE BUTTON ---------- */
+.theme-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggle:hover {
+  background: var(--surface-hover);
+  border-radius: 50%;
+}

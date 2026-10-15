@@ -1,0 +1,91 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  border: 1px solid lightgrey;
+  padding: 8px;
+  color:rgb(188, 185, 185);
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 1.2rem;
+}
+
+.material-symbols-outlined {
+  padding:10px;
+}
+
+.hover:hover {
+  background: rgba(238, 233, 233, 0.815);
+  color: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip-text {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  font-size: 0.8rem;
+  background:rgb(78, 78, 78) ;
+  color:white;
+  padding: 5px;
+  white-space: nowrap;
+  border-radius: 5px;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+.settings-area {
+  display: flex;
+}
+
+.profile-actions-area {
+  display: flex;
+}
+
+.search-area {
+  background: rgba(238, 233, 233, 0.815);
+  width: 692px;
+  height:48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+.search-area input {
+  border: none;
+  background: rgba(238, 233, 233, 0.815);
+  height: 100%;
+  width: 95%;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+.search-area span {
+  margin-left: 0 10px;
+}
+
+input:focus{
+  outline: none;
+}
+
+
+.navbar {
+  background: var(--surface);
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+}
